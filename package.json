@@ -1,0 +1,25 @@
+{
+  "name": "miniprojectaws",
+  "version": "1.0.0",
+  "description": "firstDeployAWS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ROR2022/miniProjectAWS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ROR2022/miniProjectAWS/issues"
+  },
+  "homepage": "https://github.com/ROR2022/miniProjectAWS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
