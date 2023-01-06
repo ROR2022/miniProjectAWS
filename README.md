@@ -1,0 +1,2 @@
+# miniProjectAWS
+firstDeployAWS
