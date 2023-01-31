@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Spinner from 'react-bootstrap/Spinner';
-import {useAsyncEffect} from 'use-async-effect';
+//import {useAsyncEffect} from 'use-async-effect';
 
 
 
@@ -56,6 +56,7 @@ const Home = () => {
 
   const handleCreateClients = async () => {
     setCreandoClientes(true);
+    setMyClients(null);
     for (let i = 0; i < 20; i++) {    
       const dataUser = {
         cityUser: "CDMX",
@@ -93,10 +94,7 @@ const Home = () => {
   const agregarCliente = (cliente)=>{
 
     setNuevoCliente(cliente);
-    /*let tempArray = [...myClients];
-    tempArray.push(cliente);
-    console.log('tempArray:..',tempArray);
-    setMyClients([...tempArray]);*/
+    
   }
 
   const handleSaludo = async () => {
@@ -118,6 +116,7 @@ const Home = () => {
       <button
         onClick={handleCreateClients}
         className="btn btn-danger fs-3 d-block ms-auto me-auto m-3 p-3 "
+        disabled={creandoClientes}
       >
         Crear clientes:..
       </button>
