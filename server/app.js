@@ -7,7 +7,7 @@ const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
-app.use(express.static(join(__dirname, "../client")));
+app.use(express.static(join(__dirname, "../client/build")));
 app.use("/api/", routes);
 
 export { app };
