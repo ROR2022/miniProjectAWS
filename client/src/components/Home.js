@@ -18,7 +18,7 @@ const myId = () => {
 };
 
 const createNewUser = async (dataUser) => {
-  const endpoint = "/createNewUser/";
+  const endpoint = "/api/createNewUser/";
   try {
     const response = await axios.post(`${endpoint}`, dataUser);
     //const result = await response.json();
